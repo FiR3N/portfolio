@@ -1,0 +1,79 @@
+.header {
+  position: relative;
+
+  transition: all 0.4s ease-in-out;
+
+  &Content {
+    height: 80px;
+    padding: 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+    &Text {
+      font-size: 20px;
+      letter-spacing: -1.5px;
+      color: white;
+    }
+
+    svg {
+      color: $ui-purple-color;
+      font-size: 32px;
+    }
+  }
+  .navbar {
+    .menuList {
+      display: flex;
+      gap: 20px;
+    }
+    .menuItem {
+      font-size: 20px;
+      color: rgba($color: #ffffff, $alpha: 0.5);
+
+      cursor: pointer;
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: rgba($color: #ffffff, $alpha: 1);
+      }
+    }
+  }
+
+  &Buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &Dark {
+    background-color: $ui-dark-color;
+  }
+
+  &Light {
+    background-color: #ffffff;
+    color: #ffffff;
+
+    .logo {
+      &Text {
+        color: $ui-dark-color;
+      }
+    }
+
+    .navbar {
+      .menuItem {
+        color: rgba($color: $ui-dark-color, $alpha: 0.4);
+        &:hover {
+          color: rgba($color: $ui-dark-color, $alpha: 1);
+        }
+      }
+    }
+  }
+}

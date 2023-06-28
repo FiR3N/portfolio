@@ -1,0 +1,15 @@
+{
+  "logo": {
+    "name": "Kosmach Vladislav"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "works": "My works",
+    "contact": "Contact"
+  },
+  "currentLanguage": {
+    "name": "en"
+  }
+}

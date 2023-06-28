@@ -1,0 +1,19 @@
+.themeSwitcher {
+  cursor: pointer;
+
+  .moon {
+    color: #ffffff;
+  }
+  .sun {
+    color: $ui-dark-color;
+  }
+
+  svg {
+    font-size: 24px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $ui-purple-color;
+    }
+  }
+}

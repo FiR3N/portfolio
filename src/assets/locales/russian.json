@@ -1,0 +1,15 @@
+{
+  "logo": {
+    "name": "Космач Владислав"
+  },
+  "navbar": {
+    "home": "Главная",
+    "about": "Обо мне",
+    "skills": "Навыки",
+    "works": "Мои работы",
+    "contact": "Контакты"
+  },
+  "currentLanguage": {
+    "name": "ru"
+  }
+}

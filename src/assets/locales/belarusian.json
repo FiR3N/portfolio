@@ -1,0 +1,15 @@
+{
+  "logo": {
+    "name": "Космач Уладзіслаў"
+  },
+  "navbar": {
+    "home": "Галоўная",
+    "about": "Пра мяне",
+    "skills": "Паслуги",
+    "works": "Мае працы",
+    "contact": "Кантакты"
+  },
+  "currentLanguage": {
+    "name": "by"
+  }
+}
