@@ -1,4 +1,4 @@
-import { FC, useContext } from "react";
+import { FC, useContext, useLayoutEffect, useState } from "react";
 import cls from "./Header.module.scss";
 import classNames from "classnames";
 import { useTranslation } from "react-i18next";
@@ -8,16 +8,20 @@ import ThemeSwitcher from "../../Business/ThemeSwitcher/ThemeSwitcher";
 
 const Header: FC = () => {
   const { t } = useTranslation();
+  const [isHambActive, setIsHambActive] = useState(false);
   const themeContext = useContext(ThemeContext);
-
   if (!themeContext) {
     return null;
   }
-  const { isDark, toggleTheme } = themeContext;
+  const { isDark } = themeContext;
 
-  const changeThemeHadler = () => {
-    toggleTheme();
-  };
+  useLayoutEffect(() => {
+    if (isHambActive) {
+      document.body.classList.add("_noscroll");
+    } else {
+      document.body.classList.remove("_noscroll");
+    }
+  }, [isHambActive]);
 
   return (
     <header
@@ -27,6 +31,23 @@ const Header: FC = () => {
       )}
     >
       <div className={classNames(cls.headerContent, "container")}>
+        <div
+          className={classNames(
+            isHambActive && cls._popupActive,
+            cls.headerPopup
+          )}
+        >
+          <nav className={cls.navbar}>
+            <ul className={cls.menuList}>
+              <li className={cls.menuItem}>{t("navbar.home")}</li>
+              <li className={cls.menuItem}>{t("navbar.about")}</li>
+              <li className={cls.menuItem}>{t("navbar.skills")}</li>
+              <li className={cls.menuItem}>{t("navbar.works")}</li>
+              <li className={cls.menuItem}>{t("navbar.contact")}</li>
+            </ul>
+          </nav>
+        </div>
+
         <div className={cls.logo}>
           <svg
             stroke="currentColor"
@@ -51,6 +72,16 @@ const Header: FC = () => {
           </ul>
         </nav>
         <div className={cls.headerButtons}>
+          <div
+            className={classNames(isHambActive && cls._hambActive, cls.hamb)}
+            onClick={() => setIsHambActive((prev) => !prev)}
+          >
+            <div className={cls.hambContent}>
+              <span className={cls.hambBar}></span>
+              <span className={cls.hambBar}></span>
+              <span className={cls.hambBar}></span>
+            </div>
+          </div>
           <ThemeSwitcher />
           <LanguageSwitcher />
         </div>

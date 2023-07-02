@@ -1,3 +1,12 @@
 /*COLORS----------------------------------------------------------------------------------------------------------------*/
 $ui-dark-color: #1d1d23;
 $ui-purple-color: #7364d0;
+$ui-bg-white-color: #ecf0f6;
+/*BREAKPOINTS------------------------------------------------------------------------------------------------------*/
+$ui-mobile: "screen and (max-width: 600px)";
+$ui-tablets: "screen and (max-width: 768px)";
+$ui-laptops: "screen and (max-width: 992px)";
+$ui-desktop: "screen and (max-width: 1170px)";
+
+$ui-mouse-device: "(hover: hover) and (pointer: fine)";
+$ui-touch-device: "(hover: none) and (pointer: coarse)";

@@ -1,7 +1,23 @@
 .languageSwitcher {
   font-size: 20px;
   text-decoration: underline;
-  color: $ui-purple-color;
+  text-transform: uppercase;
+
+  transition: all 0.3s ease;
 
   cursor: pointer;
+
+  @media #{$ui-mouse-device} {
+    &:hover {
+      color: $ui-purple-color;
+    }
+  }
+
+  &Dark {
+    color: #ffffff;
+  }
+
+  &Light {
+    color: $ui-dark-color;
+  }
 }

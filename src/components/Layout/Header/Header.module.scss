@@ -5,13 +5,13 @@
 
   &Content {
     height: 80px;
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
   .logo {
     display: flex;
     align-items: center;
@@ -19,6 +19,7 @@
     gap: 15px;
     &Text {
       font-size: 20px;
+      font-weight: 700;
       letter-spacing: -1.5px;
       color: white;
     }
@@ -28,6 +29,7 @@
       font-size: 32px;
     }
   }
+
   .navbar {
     .menuList {
       display: flex;
@@ -41,8 +43,39 @@
 
       transition: all 0.3s ease;
 
-      &:hover {
-        color: rgba($color: #ffffff, $alpha: 1);
+      @media #{$ui-mouse-device} {
+        &:hover {
+          color: rgba($color: #ffffff, $alpha: 1);
+        }
+      }
+    }
+  }
+
+  .hamb {
+    display: none;
+
+    &Bar {
+      width: 30px;
+      height: 3px;
+      margin: 2.5px auto;
+
+      background-color: #ffffff;
+      border-radius: 6px;
+
+      transition: all 0.3s ease;
+    }
+
+    &._hambActive {
+      .hambBar {
+        &:first-of-type {
+          transform: translate(0px, 3px) rotate(45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:last-of-type {
+          transform: translate(0px, -5px) rotate(-45deg);
+        }
       }
     }
   }
@@ -53,12 +86,22 @@
     gap: 20px;
   }
 
+  &Popup {
+    display: none;
+
+    background-color: $ui-dark-color;
+
+    &._popupActive {
+      left: 0px;
+    }
+  }
+
   &Dark {
     background-color: $ui-dark-color;
   }
 
   &Light {
-    background-color: #ffffff;
+    background-color: $ui-bg-white-color;
     color: #ffffff;
 
     .logo {
@@ -67,13 +110,75 @@
       }
     }
 
+    .hamb {
+      &Bar {
+        background-color: $ui-dark-color;
+      }
+    }
+
     .navbar {
       .menuItem {
-        color: rgba($color: $ui-dark-color, $alpha: 0.4);
-        &:hover {
-          color: rgba($color: $ui-dark-color, $alpha: 1);
+        color: rgba($color: $ui-dark-color, $alpha: 0.5);
+        font-weight: 600;
+        @media #{$ui-mouse-device} {
+          &:hover {
+            color: rgba($color: $ui-dark-color, $alpha: 1);
+          }
         }
       }
+    }
+
+    .headerPopup {
+      background-color: #ffffff;
+    }
+  }
+
+  @media #{$ui-laptops} {
+    .navbar {
+      display: none;
+    }
+    .hamb {
+      display: block;
+
+      &Content {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+      }
+    }
+    &Popup {
+      width: 100%;
+      height: 100%;
+
+      position: fixed;
+      top: 80px;
+      left: -100%;
+
+      display: block;
+
+      transition: all 0.4s ease-in-out;
+
+      overflow-y: auto;
+
+      .navbar {
+        display: block;
+        .menuList {
+          padding: 0 10px;
+
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  @media #{$ui-mobile} {
+    .logo {
+      gap: 10px;
+      &Text {
+        font-size: 18px;
+      }
+    }
+    &Buttons {
+      gap: 10px;
     }
   }
 }
