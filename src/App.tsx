@@ -1,4 +1,5 @@
 import "./App.scss";
+import StartInfo from "./components/Blocks/StartInfo/StartInfo";
 import Layout from "./components/Layout/Layout";
 import ThemeProvider from "./providers/ThemeProvider";
 
@@ -6,7 +7,7 @@ function App() {
   return (
     <ThemeProvider>
       <Layout>
-        <h2>hello!</h2>
+        <StartInfo />
       </Layout>
     </ThemeProvider>
   );

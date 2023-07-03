@@ -1,0 +1,17 @@
+.button {
+  padding: 10px 25px;
+  border-radius: 6px;
+
+  font-size: 18px;
+  color: white;
+
+  background-color: $ui-purple-color;
+
+  transition: all 0.3s ease;
+
+  @media #{$ui-mouse-device} {
+    &:hover {
+      background-color: $ui-hover-purple-color;
+    }
+  }
+}

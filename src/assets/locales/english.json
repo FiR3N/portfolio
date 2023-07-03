@@ -1,7 +1,5 @@
 {
-  "logo": {
-    "name": "Kosmach Vladislav"
-  },
+  "name": "Kosmach Vladislav",
   "navbar": {
     "home": "Home",
     "about": "About",
@@ -11,5 +9,16 @@
   },
   "currentLanguage": {
     "name": "en"
+  },
+  "startInfo": {
+    "greeting": {
+      "part1": "Hello!",
+      "part2": "My name is"
+    },
+    "animatedText": {
+      "part1": "Frontend developer"
+    },
+    "text": "I design and build interesting web applications.",
+    "buttonText": "My works"
   }
 }
