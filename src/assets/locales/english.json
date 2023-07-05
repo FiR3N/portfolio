@@ -20,5 +20,15 @@
     },
     "text": "I design and build interesting web applications.",
     "buttonText": "My works"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "text": {
+      "part1": "Hello! My name's Vlad and I'm currently involved in frontend development.",
+      "part2": "I'mstarted seriously engaging in this wonderful craft a year and a half ago. During this time, I strive to create high-quality and visually appealing web applications.",
+      "part3": "In 2023, I'm completed college and obtained a vocational degree and qualification as a technician programmer with honors",
+      "part4": "I have proficiency in <span>HTML</span>, <span>CSS</span> <span>(SASS preprocessor)</span>, <span>JavaScript</span>, <span>TypeScript</span>, the <span>React</span> library, the <span>Node.js</span> platform, and other technologies listed in the corresponding section",
+      "part5": "Currently, I am seeking a position as a Frontend Developer in a company, where I can apply my knowledge and web development skills, and continue my professional growth."
+    }
   }
 }

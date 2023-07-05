@@ -1,17 +1,18 @@
 .startInfo {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  height: 100vh;
+  padding-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   transition: all 0.4s ease-in-out;
   &Content {
-    display: flex;
-    gap: 50px;
-    align-items: center;
+    width: 100%;
   }
 
   &Text {
-    flex: 0 0 65%;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -26,25 +27,15 @@
       font-size: 36px;
       line-height: 40px;
       font-weight: 700;
+
+      color: $ui-gray-color;
     }
     &Desc {
       margin-top: 15px;
       margin-bottom: 10px;
-    }
-  }
 
-  &Image {
-    flex: 0 1 35%;
-
-    img {
-      width: 100%;
-      height: 100%;
-      max-width: 350px;
-      max-height: 450px;
-
-      object-fit: cover;
-      object-position: 50% 50%;
-      border-radius: 6px;
+      font-size: 20px;
+      font-weight: 400;
     }
   }
 
@@ -52,27 +43,23 @@
     background-color: $ui-less-dark-color;
 
     .startInfoText {
-      color: #ffffff;
+      color: $ui-white-color;
     }
   }
 
-  &Ligth {
+  &Light {
     background-color: $ui-bg-white-color;
 
-    .startInfoText {
+    .startInfoText,
+    .startInfoTextDesc,
+    .animatedText {
       color: $ui-dark-color;
     }
   }
 
-  @media #{$ui-laptops} {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
   @media #{$ui-tablets} {
-    padding-top: 40px;
-    padding-bottom: 40px;
-
+    height: 80vh;
+    padding-bottom: 50px;
     &Content {
       flex-direction: column;
     }
@@ -92,7 +79,6 @@
   }
 
   @media #{$ui-mobile} {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
   }
 }

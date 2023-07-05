@@ -4,7 +4,18 @@ $ui-less-dark-color: #1d1d26;
 $ui-purple-color: #7364d0;
 $ui-hover-purple-color: #a494f5;
 $ui-bg-white-color: #ecf0f6;
-/*BREAKPOINTS------------------------------------------------------------------------------------------------------*/
+$ui-white-color: #ffffff;
+$ui-gray-color: #a2a1a6;
+/*OTHERSTYLES------------------------------------------------------------------------------------------------------------*/
+$ui-border-radius: 6px;
+/*ZINDEX-----------------------------------------------------------------------------------------------------------------*/
+$ui-index-1: 1; //for crawling in general stream
+$ui-index-2: 2; //for crawling in general stream
+$ui-index-3: 3; //for masks
+$ui-index-4: 4; //for sidebars
+$ui-index-5: 5; //for modals
+$ui-index-6: 6; //for blocking element
+/*BREAKPOINTS-----------------------------------------------------------------------------------------------------------*/
 $ui-mobile: "screen and (max-width: 600px)";
 $ui-tablets: "screen and (max-width: 768px)";
 $ui-laptops: "screen and (max-width: 992px)";

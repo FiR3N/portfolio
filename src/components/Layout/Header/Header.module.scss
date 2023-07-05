@@ -15,6 +15,7 @@
   .logo {
     display: flex;
     align-items: center;
+    margin-right: 10px;
 
     gap: 15px;
     &Text {
@@ -37,15 +38,19 @@
     }
     .menuItem {
       font-size: 20px;
-      color: rgba($color: #ffffff, $alpha: 0.5);
+      color: rgba($color: $ui-white-color, $alpha: 0.5);
 
       cursor: pointer;
 
       transition: all 0.3s ease;
 
+      &._menuItemActive {
+        color: rgba($color: $ui-white-color, $alpha: 1);
+      }
+
       @media #{$ui-mouse-device} {
         &:hover {
-          color: rgba($color: #ffffff, $alpha: 1);
+          color: rgba($color: $ui-white-color, $alpha: 1);
         }
       }
     }
@@ -59,8 +64,8 @@
       height: 3px;
       margin: 2.5px auto;
 
-      background-color: #ffffff;
-      border-radius: 6px;
+      background-color: $ui-white-color;
+      border-radius: $ui-border-radius;
 
       transition: all 0.3s ease;
     }
@@ -87,6 +92,9 @@
   }
 
   &Popup {
+    position: relative;
+    z-index: $ui-index-4;
+
     display: none;
 
     background-color: $ui-dark-color;
@@ -98,11 +106,19 @@
 
   &Dark {
     background-color: $ui-dark-color;
+
+    .menuList {
+      .menuItem {
+        &:first-of-type {
+          color: rgba($color: $ui-white-color, $alpha: 1);
+        }
+      }
+    }
   }
 
   &Light {
     background-color: $ui-bg-white-color;
-    color: #ffffff;
+    color: $ui-white-color;
 
     .logo {
       &Text {
@@ -120,6 +136,10 @@
       .menuItem {
         color: rgba($color: $ui-dark-color, $alpha: 0.5);
         font-weight: 600;
+
+        &:first-of-type {
+          color: rgba($color: $ui-dark-color, $alpha: 1);
+        }
         @media #{$ui-mouse-device} {
           &:hover {
             color: rgba($color: $ui-dark-color, $alpha: 1);
@@ -129,7 +149,7 @@
     }
 
     .headerPopup {
-      background-color: #ffffff;
+      background-color: $ui-white-color;
     }
   }
 

@@ -7,13 +7,12 @@ interface ThemeProviderProps {
 
 const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
   const [isDark, setIsDark] = useState(
-    localStorage.getItem("isDark") ? true : false
+    localStorage.getItem("isDark") === "false" ? false : true
   );
 
   const toggleTheme = useCallback(() => {
     setIsDark((prev) => !prev);
     localStorage.setItem("isDark", String(!isDark));
-    console.log("toggle");
   }, []);
 
   return (

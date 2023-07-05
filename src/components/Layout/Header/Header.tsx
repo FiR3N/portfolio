@@ -39,7 +39,9 @@ const Header: FC = () => {
         >
           <nav className={cls.navbar}>
             <ul className={cls.menuList}>
-              <li className={cls.menuItem}>{t("navbar.home")}</li>
+              <li className={classNames(cls.menuItem, cls._menuItemActive)}>
+                {t("navbar.home")}
+              </li>
               <li className={cls.menuItem}>{t("navbar.about")}</li>
               <li className={cls.menuItem}>{t("navbar.skills")}</li>
               <li className={cls.menuItem}>{t("navbar.works")}</li>
