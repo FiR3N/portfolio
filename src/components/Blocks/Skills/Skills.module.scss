@@ -1,0 +1,56 @@
+.skills {
+  &Content {
+    padding-bottom: 100px;
+  }
+  &Title {
+    margin-bottom: 40px;
+  }
+  &Items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &Dark {
+    background-color: $ui-less-dark-color;
+
+    .skillsTitle {
+      color: $ui-white-color;
+    }
+
+    .skillsItem {
+      &Transparent {
+        fill: $ui-dark-color;
+      }
+      &Dark {
+        fill: $ui-gray-color;
+      }
+    }
+  }
+  &Light {
+    .skillsItem {
+      &Transparent {
+        fill: $ui-white-color;
+      }
+      &Dark {
+        fill: $ui-dark-color;
+      }
+    }
+  }
+  @media #{$ui-tablets} {
+    &Items {
+      justify-content: center;
+
+      gap: 20px;
+      svg {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
