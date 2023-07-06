@@ -1,6 +1,6 @@
 .skills {
   &Content {
-    padding-bottom: 100px;
+    padding-bottom: 200px;
   }
   &Title {
     margin-bottom: 40px;
@@ -42,7 +42,15 @@
       }
     }
   }
+  @media #{$ui-laptops} {
+    &Content {
+      padding-bottom: 150px;
+    }
+  }
   @media #{$ui-tablets} {
+    &Content {
+      padding-bottom: 100px;
+    }
     &Items {
       justify-content: center;
 
@@ -51,6 +59,12 @@
         width: 60px;
         height: 60px;
       }
+    }
+  }
+
+  @media #{$ui-mobile} {
+    &Content {
+      padding-bottom: 50px;
     }
   }
 }

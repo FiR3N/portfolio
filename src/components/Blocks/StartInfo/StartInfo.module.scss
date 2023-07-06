@@ -58,7 +58,7 @@
   }
 
   @media #{$ui-tablets} {
-    height: 80vh;
+    // height: 80vh;
     padding-bottom: 50px;
     &Content {
       flex-direction: column;

@@ -31,5 +31,12 @@
       "part5": "Currently, I am seeking a position as a Frontend Developer in a company, where I can apply my knowledge and web development skills, and continue my professional growth."
     }
   },
-  "skills": "Skills"
+  "skills": "Skills",
+  "contact": {
+    "name": "Contacts",
+    "text": "I am always open to discussing new projects and collaboration opportunities. Please feel free to contact me with any questions or proposals! My email is <a href=mailto:fir3norig@gmail.com>fir3norig@gmail.com</a>."
+  },
+  "footer": {
+    "text": "© 2023 - Built by Kosmach Vladislav"
+  }
 }

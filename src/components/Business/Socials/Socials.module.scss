@@ -1,0 +1,65 @@
+.socials {
+  position: fixed;
+  bottom: 0;
+  left: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &Item {
+    margin-bottom: 16px;
+    padding: 4px;
+
+    border: 3px solid $ui-gray-color;
+    border-radius: 50%;
+
+    transition: all 0.3s ease;
+
+    svg {
+      width: 30px;
+      height: 30px;
+
+      transition: all 0.3s ease;
+
+      fill: $ui-gray-color;
+    }
+
+    @media #{$ui-mouse-device} {
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  &Line {
+    height: 100px;
+    width: 2px;
+
+    background-color: rgba($ui-gray-color, 0.3);
+    border-radius: 6px;
+  }
+
+  &Dark {
+    @media #{$ui-mouse-device} {
+      .socialsItem {
+        &:hover {
+          border: 3px solid $ui-white-color;
+
+          svg {
+            fill: $ui-white-color;
+          }
+        }
+      }
+    }
+  }
+  &Light {
+    .socialsItem {
+      border: 3px solid $ui-dark-color;
+
+      svg {
+        fill: $ui-dark-color;
+      }
+    }
+  }
+}

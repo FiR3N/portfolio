@@ -1,0 +1,31 @@
+.footer {
+  &Content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    p {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &Light {
+    .footerContent {
+      border-top: 3px solid $ui-dark-color;
+    }
+    p {
+      color: $ui-dark-color;
+    }
+  }
+
+  &Dark {
+    background-color: $ui-less-dark-color;
+
+    .footerContent {
+      border-top: 3px solid rgba($ui-gray-color, 0.3);
+    }
+  }
+}
