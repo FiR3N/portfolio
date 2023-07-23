@@ -1,9 +1,9 @@
 import "./App.scss";
 import AboutMe from "./components/Blocks/AboutMe/AboutMe";
 import Contact from "./components/Blocks/Contact/Contact";
+import Projects from "./components/Blocks/Projects/Projects";
 import Skills from "./components/Blocks/Skills/Skills";
 import StartInfo from "./components/Blocks/StartInfo/StartInfo";
-import Socials from "./components/Business/Socials/Socials";
 import Layout from "./components/Layout/Layout";
 import ThemeProvider from "./providers/ThemeProvider";
 
@@ -14,8 +14,8 @@ function App() {
         <StartInfo />
         <AboutMe />
         <Skills />
+        <Projects />
         <Contact />
-        {/* <Socials /> */}
       </Layout>
     </ThemeProvider>
   );

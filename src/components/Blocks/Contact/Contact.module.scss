@@ -1,5 +1,8 @@
 .contact {
   position: relative;
+
+  transition: all 0.4s ease-in-out;
+
   &Content {
     padding-bottom: 100px;
   }
@@ -19,11 +22,78 @@
     }
   }
   &Text {
+    margin-bottom: 20px;
     a {
       color: $ui-purple-color;
       font-size: 20px;
 
       cursor: pointer;
+    }
+  }
+
+  .socials {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    &Item {
+      padding: 4px;
+
+      border: 3px solid $ui-gray-color;
+      border-radius: 50%;
+
+      transition: all 0.3s ease;
+
+      svg {
+        width: 30px;
+        height: 30px;
+
+        transition: all 0.3s ease;
+
+        fill: $ui-gray-color;
+      }
+
+      @media #{$ui-mouse-device} {
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+    }
+
+    &Line {
+      height: 100px;
+      width: 2px;
+
+      background-color: rgba($ui-gray-color, 0.3);
+      border-radius: 6px;
+    }
+
+    &Dark {
+      @media #{$ui-mouse-device} {
+        .socialsItem {
+          &:hover {
+            border: 3px solid $ui-white-color;
+
+            svg {
+              fill: $ui-white-color;
+            }
+          }
+        }
+      }
+    }
+    &Light {
+      .socialsItem {
+        border: 3px solid $ui-dark-color;
+
+        svg {
+          fill: $ui-dark-color;
+        }
+      }
+    }
+  }
+  @media #{$ui-tablets} {
+    &Title {
+      margin-bottom: 20px;
     }
   }
 }

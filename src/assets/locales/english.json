@@ -32,11 +32,15 @@
     }
   },
   "skills": "Skills",
+  "projects": {
+    "title": "Projects",
+    "buttonText": "Live demo"
+  },
   "contact": {
     "name": "Contacts",
     "text": "I am always open to discussing new projects and collaboration opportunities. Please feel free to contact me with any questions or proposals! My email is <a href=mailto:fir3norig@gmail.com>fir3norig@gmail.com</a>."
   },
   "footer": {
-    "text": "© 2023 - Built by Kosmach Vladislav"
+    "text": "© 2023 - Built by Kosmach `FiREN` Vladislav"
   }
 }

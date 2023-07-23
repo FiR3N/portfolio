@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "ru": "Веб-приложение строительной организации",
+      "en": "Webapp for bulding organisation",
+      "by": "Вэб-прылажэнне будаўнічай арганізацыі"
+    },
+    "image": "/src/assets/images/building-organization.png",
+    "type": {
+      "ru": "Сервер и клиент",
+      "en": "Server and client",
+      "by": "Сервер і кліент"
+    },
+    "technology": "React, TypeScript, Node.js, PostgreSQL",
+    "github": {
+      "links": [
+        "https://github.com/FiR3N/building-alliance-client",
+        "https://github.com/FiR3N/building-alliance-server"
+      ]
+    },
+    "demoLink": "https://building-alliance-client.vercel.app/",
+    "description": {
+      "ru": "Данное веб-приложение было разработано для организации ОАО 'Спецстроймеханизация' в ходе димпломного проектирования и представлено в виде обычного информационного сайта с возможностью заказа услуг и с панелью администрирования, на которой можно изменять практический весь контент сайта.",
+      "en": "This web application was developed for the organization of JSC 'Specstroimexanisation' as part of a diploma project and presented as a regular informational website with the ability to order services and an administration panel where almost all content of the website can be modified.",
+      "by": "Гэта вэб-прылажэнне было распрацавана для арганізацыі ААТ 'Спецстраймеханізацыя' у ходзе дыпломнага праектавання і прадстаўлена ў выглядзе звычайнага інфармацыйнага сайта з магчымасцю заказу паслуг і з панэлем адміністравання, на якой можна змяняць практычна ўвесь кантэнт сайта."
+    }
+  },
+  {
+    "id": 2,
+    "name": {
+      "ru": "Веб-приложение строительной организации",
+      "en": "Webapp bulding organisation",
+      "by": "Вэб-прылажэнне будаўнічай арганізацыі"
+    },
+    "image": "/src/assets/images/building-organization.png",
+    "type": {
+      "ru": "Сервер и клиент",
+      "en": "Server and client",
+      "by": "Сервер і кліент"
+    },
+    "technology": "React, TypeScript, Node.js, PostgreSQL",
+    "github": {
+      "links": [
+        "https://github.com/FiR3N/building-alliance-client",
+        "https://github.com/FiR3N/building-alliance-server"
+      ]
+    },
+    "demoLink": "https://building-alliance-client.vercel.app/",
+    "description": {
+      "ru": "Данное веб-приложение было разработано для организации ОАО 'Спецстроймеханизация' в ходе димпломного проектирования и представлено в виде обычного информационного сайта с возможностью заказа услуг и с панелью администрирования, на которой можно изменять практический весь контент сайта.",
+      "en": "This web application was developed for the organization of JSC 'Specstroimexanisation' as part of a diploma project and presented as a regular informational website with the ability to order services and an administration panel where almost all content of the website can be modified.",
+      "by": "Гэта вэб-прылажэнне было распрацавана для арганізацыі ААТ 'Спецстраймеханізацыя' у ходзе дыпломнага праектавання і прадстаўлена ў выглядзе звычайнага інфармацыйнага сайта з магчымасцю заказу паслуг і з панэлем адміністравання, на якой можна змяняць практычна ўвесь кантэнт сайта."
+    }
+  }
+]

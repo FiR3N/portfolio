@@ -1,6 +1,8 @@
 .header {
-  position: relative;
+  width: 100%;
 
+  position: fixed;
+  z-index: $ui-index-3;
   transition: all 0.4s ease-in-out;
 
   &Content {
@@ -149,7 +151,7 @@
     }
 
     .headerPopup {
-      background-color: $ui-white-color;
+      background-color: $ui-bg-white-color;
     }
   }
 
@@ -191,6 +193,12 @@
     }
   }
   @media #{$ui-mobile} {
+    &Content {
+      height: 60px;
+    }
+    &Popup {
+      top: 60px;
+    }
     .logo {
       gap: 10px;
       &Text {
