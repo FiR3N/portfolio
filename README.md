@@ -1,11 +1,11 @@
-#Portfolio Website
+Portfolio Website
 
 A modern, responsive portfolio website built with React, TypeScript, and Vite. Features smooth animations and optimized performance.
 
-##🌐 Live Demo
-LINK
+🌐 Live Demo
+[LINK](https://portfolio-rosy-ten-60.vercel.app/)
 
-##✨ Features
+✨ Features
 
 - Modern Stack: React 19 + TypeScript + Vite
 - Smooth Animations: Powered by React Spring
@@ -14,7 +14,7 @@ LINK
 - Clean Code: ESLint configured, TypeScript enforced
 - Lazy Loading: Images and components with Intersection Observer
 
-##🛠️ Tech Stack
+🛠️ Tech Stack
 
 - Frontend: React 19, TypeScript
 - Build Tool: Vite
@@ -23,7 +23,7 @@ LINK
 - Icons: React Icons
 - Code Quality: ESLint, TypeScript
 
-##🚀 Available Scripts
+🚀 Available Scripts
 
 - npm run dev Start development server
 - npm run build - Build for production
