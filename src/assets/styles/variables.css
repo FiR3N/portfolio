@@ -1,0 +1,58 @@
+:root {
+  /*--FONT--*/
+  --font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", sans-serif;
+
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-md: 1.125rem; /* 18px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-2xl: 1.75rem; /* 28px */
+  --font-size-3xl: 2rem; /* 32px */
+  --font-size-4xl: 2.25rem; /* 36px */
+  --font-size-5xl: 3rem; /* 48px */
+
+  --font-weigth-light: 300;
+  --font-weigth-regular: 400;
+  --font-weigth-medium: 500;
+  --font-weigth-semibold: 600;
+  --font-weigth-bold: 700;
+
+  /*--COLORS-LIGHT-THEME--*/
+  --primary-color: #646cff;
+  --bg-color: #ffffff;
+  --section-bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --header-bg: rgba(255, 255, 255, 0.95);
+  --text-color: #213547;
+  --text-secondary: #666;
+  --border-color: #e9ecef;
+  --hover-color: rgba(100, 108, 255, 0.3);
+
+  /*--BORDERS--*/
+  --border: 1px solid var(--border-color);
+
+  /*--Z-INDEX--*/
+  --z-index-0: 0;
+  --z-index-1: 1;
+  --z-index-2: 2;
+  --z-index-3: 3;
+  --z-index-4: 4;
+  --z-index-5: 5;
+  --z-index-6: 6;
+}
+
+[data-theme="dark"] {
+  /*--COLORS-DARK-THEME--*/
+  --primary-color: #646cff;
+  --bg-color: #1a1a1a;
+  --section-bg: #2d2d2d;
+  --card-bg: #2d2d2d;
+  --header-bg: rgba(26, 26, 26, 0.95);
+  --text-color: rgba(255, 255, 255, 0.87);
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --border-color: #404040;
+  --hover-color: rgba(100, 108, 255, 0.2);
+}

@@ -1,0 +1,16 @@
+export const hardSkills = [
+  "HTML (HTML5), JSX",
+  "CSS (CSS3), SASS (SCSS), Bootstrap, Tailwind, Animations",
+  "JavaScript (ES6+, OOP), TypeScript",
+  "React",
+  "Redux (Redux Toolkit), MobX",
+  "React Hook Form, Axios, React Router, React-Spring",
+  "Gulp, Vite, Webpack",
+  "Node.js, Express.js, REST API",
+  "SQL, PostgreSQL",
+  "BEM, Feature-Sliced Design, Accessibility, UX",
+  "Git (GitHub), Docker",
+  "Figma, Adobe Photoshop",
+  "Basic understanding PHP, Bitrix24 REST API",
+  "English level - B1",
+];

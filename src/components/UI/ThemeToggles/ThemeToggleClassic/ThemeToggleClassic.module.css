@@ -1,0 +1,32 @@
+.themeToggle {
+  padding: 8px;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text-color);
+  font-size: var(--font-weight-base);
+
+  background: none;
+  border: none;
+  border-radius: 50%;
+
+  transition: background-color 0.3s ease;
+}
+
+.themeToggle svg {
+  width: 25px;
+  height: 25px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .themeToggle:hover {
+    background-color: var(--hover-color);
+  }
+}
+@media (max-width: 48em) {
+  .themeToggle {
+    display: flex;
+  }
+}

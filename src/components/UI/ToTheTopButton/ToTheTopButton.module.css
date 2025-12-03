@@ -1,0 +1,15 @@
+.toTheTopButton {
+  position: fixed;
+  z-index: var(--z-index-3);
+  top: 95%;
+  right: -50px;
+
+  transition: all ease-in 0.3s;
+}
+.toTheTopButton a {
+  padding: 10px 15px;
+}
+
+.toTheTopButton._active {
+  right: 20px;
+}

@@ -1,0 +1,50 @@
+.themeToggle {
+  padding: 5px;
+  border: 2px solid var(--text-color);
+  border-radius: 10px;
+
+  color: var(--bg-color);
+
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.themeToggle svg {
+  width: 20px;
+  height: 20px;
+
+  z-index: var(--z-index-1);
+
+  transition: all 0.2s ease-in;
+}
+.themeToggleActiveCirle {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--text-color);
+  border-radius: 10px;
+
+  position: absolute;
+  top: -1px;
+  left: -2px;
+
+  background-color: var(--text-color);
+
+  transition: all 0.2s ease-in-out;
+}
+._disabled {
+  color: var(--text-color);
+
+  opacity: 0.2;
+}
+
+._move {
+  left: 30px;
+}
+@media (max-width: 48em) {
+  .themeToggle {
+    display: none;
+  }
+}

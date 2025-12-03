@@ -1,0 +1,130 @@
+.header {
+  width: 100%;
+  height: 60px;
+
+  position: fixed;
+  top: 0;
+  z-index: var(--z-index-3);
+
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: var(--border);
+}
+
+.headerContent {
+  width: 100%;
+  height: 100%;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  color: var(--text-color);
+}
+
+.headerHamb {
+  display: none;
+}
+
+.headerNav {
+  display: flex;
+  gap: 32px;
+}
+
+.headerNav a {
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  color: var(--text-color);
+
+  transition: color 0.3s ease;
+}
+
+.headerButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.headerPopup {
+  display: none;
+}
+
+@media (max-width: 48em) {
+  .headerNav {
+    gap: 16px;
+  }
+  .headerNav a {
+    font-size: var(--font-size-sm);
+  }
+  .headerLogo {
+    font-size: var(--font-size-md);
+  }
+}
+
+@media (max-width: 37.5em) {
+  .headerNav {
+    display: none;
+  }
+  .headerHamb {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerHamb span {
+    display: block;
+  }
+  .headerHamb._active {
+    span:first-child {
+      transform: translate(0px, 4px) rotate(45deg);
+    }
+    span:nth-child(2) {
+      display: none;
+    }
+    span:last-child {
+      transform: translate(0px, -3px) rotate(-45deg);
+    }
+  }
+
+  .headerPopup {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 60px;
+    left: -100vw;
+    z-index: var(--z-index-5);
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--bg-color);
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    overflow-y: auto;
+    opacity: 0;
+  }
+  .headerPopup._active {
+    left: 0;
+
+    opacity: 1;
+  }
+  .headerPopup .headerNav {
+    margin: 5px 15px;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .headerNav a:hover {
+    color: var(--primary-color);
+  }
+}
