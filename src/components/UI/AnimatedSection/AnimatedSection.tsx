@@ -1,4 +1,5 @@
 import { animated, useSpring } from "@react-spring/web";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 export type AnimationType =
@@ -23,6 +24,7 @@ export interface IAnimatedSectionProps {
     friction?: number;
     mass?: number;
   };
+  disableOnMobile?: boolean;
 }
 
 const AnimatedSection: React.FC<IAnimatedSectionProps> = ({
@@ -35,11 +37,30 @@ const AnimatedSection: React.FC<IAnimatedSectionProps> = ({
   id,
   style,
   config = { tension: 200, friction: 30 },
+  disableOnMobile = true,
 }) => {
+  const [isMobile, setIsMobile] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce,
     threshold,
   });
+
+  useEffect(() => {
+    const checkMobile = () => {
+      const isTouchDevice =
+        "ontouchstart" in window || navigator.maxTouchPoints > 0;
+      const isSmallScreen = window.innerWidth <= 768;
+
+      setIsMobile(isTouchDevice && isSmallScreen);
+    };
+
+    checkMobile();
+
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const shouldAnimate = !(disableOnMobile && isMobile);
 
   const getAnimationTransform = () => {
     if (!inView) {
@@ -65,8 +86,16 @@ const AnimatedSection: React.FC<IAnimatedSectionProps> = ({
     opacity: inView ? 1 : 0,
     transform: getAnimationTransform(),
     delay: inView ? delay : 0,
-    config,
+    config: shouldAnimate ? config : { duration: 0 },
   });
+
+  if (!shouldAnimate) {
+    return (
+      <section ref={ref} id={id} className={className} style={style}>
+        {children}
+      </section>
+    );
+  }
 
   return (
     <animated.section
