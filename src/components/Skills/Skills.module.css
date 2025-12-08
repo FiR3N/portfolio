@@ -46,7 +46,7 @@
   padding: 1.25rem;
   border: 2px solid var(--bg-color);
   border-radius: 15px;
-  box-shadow: 0 3px 10px var(--hover-color);
+  box-shadow: 3px 3px 5px var(--hover-color);
 
   display: flex;
   align-items: center;

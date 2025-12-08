@@ -13,7 +13,7 @@ const Skills: React.FC<ISkillsProps> = ({ isSimple = true }) => {
       id="skills"
       className={cls.skills}
       delay={200}
-      threshold={0.2}
+      threshold={0.1}
       animation="slide-up"
     >
       <h2 className="section-title">Мои умения</h2>

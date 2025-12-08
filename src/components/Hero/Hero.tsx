@@ -1,4 +1,4 @@
-import me from "../../assets/images/me_3.png";
+import me from "../../assets/images/me_2.webp";
 import AnimatedSection from "../UI/AnimatedSection/AnimatedSection";
 import Button from "../UI/Button/Button";
 import cls from "./Hero.module.css";
@@ -19,8 +19,8 @@ const Hero: React.FC = () => {
           <h3>Frontend Developer</h3>
           <p>
             Создаю современные, адаптивные веб-приложения с использованием
-            React, TypeScript и современных технологий. Стремлюсь к написанию
-            чистого, поддерживаемого кода и постоянному развитию.
+            React, TypeScript и других современных технологий. Стремлюсь к
+            написанию чистого, поддерживаемого кода и постоянному развитию.
           </p>
           <div className={cls.heroButtons}>
             <Button type="primary" href="#projects">

@@ -25,7 +25,7 @@
 
 .headerLogo {
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   color: var(--text-color);
 }
 
@@ -110,6 +110,9 @@
 
     overflow-y: auto;
     opacity: 0;
+  }
+  .headerPopup a {
+    font-size: var(--font-size-md);
   }
   .headerPopup._active {
     left: 0;

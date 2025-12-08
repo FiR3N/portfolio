@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
       id="projects"
       className={cls.projects}
       delay={200}
-      threshold={0.2}
+      threshold={0.1}
       animation="slide-up"
     >
       <div className="container">

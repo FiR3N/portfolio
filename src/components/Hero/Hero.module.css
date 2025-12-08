@@ -23,9 +23,10 @@
 
   justify-self: center;
 
-  border-radius: 50%;
+  border-radius: 20%;
 
   object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .heroText h1 {
@@ -44,7 +45,12 @@
   display: flex;
   gap: 15px;
 }
-
+@media (max-width: 50.875em) {
+  .heroImage {
+    max-height: 300px;
+    max-width: 300px;
+  }
+}
 @media (max-width: 48em) {
   .hero {
     padding: 64px 0 32px;
