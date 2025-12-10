@@ -2,6 +2,7 @@ import type { IProject } from "../types/index";
 import ssm from "../assets/images/ssm.webp";
 import todo from "../assets/images/todo.webp";
 import yabao from "../assets/images/yabao.webp";
+import game2048 from "../assets/images/2048.webp";
 
 export const projects: IProject[] = [
   {
@@ -75,5 +76,20 @@ export const projects: IProject[] = [
     ],
     demoUrl: "https://task-scheduler-alpha-henna.vercel.app",
     image: todo,
+  },
+  {
+    id: 4,
+    title: "2048 Game",
+    description: "Классическая версия популярной игры 2048",
+    technologies: ["Javascript"],
+    githubUrls: [
+      {
+        id: 1,
+        name: "",
+        url: "https://github.com/FiR3N/2048",
+      },
+    ],
+    demoUrl: "https://fir3n.github.io/2048",
+    image: game2048,
   },
 ];
